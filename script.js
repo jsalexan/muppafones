@@ -1,15 +1,22 @@
-function changeImage() {
-    let image = document.getElementById("pink");
-    let originalSrc = image.src;
-    image.src = "/images/puff 2 .png";
-    setTimeout(function() {
-      image.src = originalSrc;
-    }, 1000);
-  }
 
-  const element = document.getElementById("my-element");
+// Function to change image 1 to image 2
+function changeImage(event) {
+  let image = event.target;
+  let originalSrc = image.src;
+  let newSrc = image.dataset.newsrc;
+  image.src = newSrc;
+  setTimeout(function() {
+    image.src = originalSrc;
+  }, 500);
+}
 
-element.addEventListener("mouseover", () => {
-  // Do something when the mouse hovers over the element
+// Creates event listener for each puff
+let images = document.querySelectorAll('.puff1 img');
+images.forEach(function(image) {
+  image.addEventListener('mouseover', changeImage);
 });
+  
+
+ 
+
   

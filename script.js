@@ -6,4 +6,10 @@ function changeImage() {
       image.src = originalSrc;
     }, 1000);
   }
+
+  const element = document.getElementById("my-element");
+
+element.addEventListener("mouseover", () => {
+  // Do something when the mouse hovers over the element
+});
   

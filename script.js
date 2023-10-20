@@ -37,10 +37,10 @@ document.getElementById('start-show-button').addEventListener('click', function(
 
     leftCurtain.style.transform = 'translateX(-100%)';
     rightCurtain.style.transform = 'translateX(100%)';
-    
+ 
+  audioPlayer.play();
     // Hide the button when the curtains open
-    document.getElementById('start-show-button').style.display = 'none';
-   
+    document.getElementById('start-show-button').style.display = 'none';  
   }
 });
 

@@ -15,6 +15,11 @@ body,html {
   cursor: pointer;
 }
 
+.full-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .flex {
   display: flex;
@@ -53,7 +58,7 @@ img.puff1 {
   flex: 1;
   height: 100%;
   background-size: cover;
-  transition: transform 1s ease; /* Animation speed */
+  transition: transform 6s ease; /* Animation speed */
 }
 
 .curtain.left {
@@ -68,16 +73,19 @@ img.puff1 {
   transform: translateX(0%);
 }
 
-/* TODO:Styling for the button */
+/* Styling for the ticket button */
 #start-show-button {
   position: absolute;
   z-index: 3; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  transition: all 0.3s ease-in-out;
+}
+
+#start-show-button:hover {
+  transform:scale(1.1);
 }
 
 /* Styling for puffs */
 .puff1 {
   z-index: 1; 
 }
+

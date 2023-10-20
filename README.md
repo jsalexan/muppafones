@@ -14,7 +14,7 @@
   <br><br>
   As a lifelong Muppets fan, I wanted to create my version of the [Muppaphones](https://www.youtube.com/watch?v=p1YAUeOk2Hk). This was mainly created for fun, but was also an exercise in using CSS transitions and animations, custom audio, event listeners, DOM manipulation, page interaction flow, conditional logic, and creativity. I created the puffs, mallet, and backgrounds in Canva and recorded the audio clips (whacks and ows) at my desk and edited them with Descript. 
   <br><br>
-  In the future, I would like to add more animation/sound to the puffs so they aren't static as they wait to be whacked, i.e. adding blinks, snoring, winces, complaining, etc. I'd like to add audience applause as the curtain opens. It would be interesting to allow the user to select a song from a list and then be given a color guide to play it. Maybe even with backing tracks. I'd like to make the app responsive in some way. 
+  Next step is to put in some protocols to prevent the animation from sticking when overloaded. In the future, I would like to add more animation/sound to the puffs so they aren't static as they wait to be whacked, i.e. adding blinks, snoring, winces, complaining, etc. I'd like to add audience applause as the curtain opens. It would be interesting to allow the user to select a song from a list and then be given a color guide to play it. Maybe even with backing tracks. I'd like to make the app responsive in some way. 
   <br><br>
 
 ## Table of Contents

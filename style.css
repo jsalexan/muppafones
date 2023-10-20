@@ -12,7 +12,7 @@ body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  cursor: url('/images/Muppa-mallet.png'), auto;
+  cursor: pointer;
 }
 
 
@@ -35,4 +35,50 @@ img.puff1 {
   position: absolute;
   top: 100px; 
   left: 100px; 
+}
+
+/* Style the curtains */
+.curtains {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  z-index: 2; 
+}
+
+.curtain {
+  flex: 1;
+  height: 100%;
+  background: url('https://res.cloudinary.com/dlxjksvbc/image/upload/v1697783154/Muppafones_curtain_left_ww3bpq.png') no-repeat;
+  background-size: cover;
+  transition: transform 1s ease; /* Animation speed */
+}
+
+.curtain.left {
+  background: url('https://res.cloudinary.com/dlxjksvbc/image/upload/v1697783154/Muppafones_curtain_left_ww3bpq.png') no-repeat;
+  background-size: cover;
+  transform: translateX(0%);
+}
+
+.curtain.right {
+  background: url('https://res.cloudinary.com/dlxjksvbc/image/upload/v1697783153/Muppafones_curtain_right_fn8de6.png') no-repeat;
+  background-size: cover;
+  transform: translateX(0%);
+}
+
+/* TODO:Styling for the button */
+#start-show-button {
+  position: absolute;
+  z-index: 3; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+/* Styling for puffs */
+.puff1 {
+  z-index: 1; 
 }

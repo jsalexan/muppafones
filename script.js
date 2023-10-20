@@ -18,7 +18,33 @@ function playSound(dataPuff) {
   }
 }
 
-// Creates event listener for each puff
+document.getElementById('start-show-button').addEventListener('click', function() {
+  const leftCurtain = document.querySelector('.curtain.left');
+  const rightCurtain = document.querySelector('.curtain.right');
+  const curtainDiv = document.querySelector('.curtains');
+
+  if (leftCurtain && rightCurtain) {
+  
+    leftCurtain.addEventListener('transitionend', function() {
+      
+      curtainDiv.style.opacity = 0;
+      curtainDiv.style.pointerEvents = 'none';
+
+       // Change cursor style to mallet 
+      document.documentElement.style.cursor = 'url("/images/Muppa-mallet.png"), auto';
+      document.body.style.cursor = 'url("/images/Muppa-mallet.png"), auto';
+    });
+
+    leftCurtain.style.transform = 'translateX(-100%)';
+    rightCurtain.style.transform = 'translateX(100%)';
+    
+    // Hide the button when the curtains open
+    document.getElementById('start-show-button').style.display = 'none';
+   
+  }
+});
+
+// Event listeners for image interactions
 let images = document.querySelectorAll('.puff1 img');
 images.forEach(function(image) {
   let dataPuff = image.parentNode.getAttribute('data-puff');
@@ -27,23 +53,3 @@ images.forEach(function(image) {
     playSound(dataPuff);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
- 
-
-  

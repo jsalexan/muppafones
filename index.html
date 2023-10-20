@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Another Day, Another Headache</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
- 
+  <head>
+    <meta charset="UTF-8">
+    <title>Another Day, Another Headache</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
   <body>
     <container class="full-page">
-    <div class="banner"><img src="images/PuffafoneBanner.png"/> 
-    </div>   
-    <container class="flex" id="puffs">
-      <div class="puff1" data-puff="C"><img id="C" src="/images/puff 1.png" width="150px" data-newsrc="/images/puff 2 .png"/></div>
+      <div class="banner"><img src="images/PuffafoneBanner.png"/></div>
+      <button id="start-show-button">Start the Show</button> 
+      <container class="flex" id="puffs">
+        <div class="puff1" data-puff="C">
+          <img id="C" src="/images/puff 1.png" width="150px" data-newsrc="/images/puff 2 .png"/>
+        </div>
 
       <div class="puff1" data-puff="D"><img id="D" src="/images/puff 1 blue.png" width="150px" data-newsrc="/images/puff 2blue.png"/></div>
 
@@ -39,8 +39,13 @@
 <audio data-puff="C2" src="sounds/whomp.wav"></audio>
 
 </container>
+<div class="curtains">
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+</div>
 </container>
 
 <script src="/script.js"></script>
 </body>
 </html>
+

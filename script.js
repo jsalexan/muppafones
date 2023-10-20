@@ -31,8 +31,8 @@ document.getElementById('start-show-button').addEventListener('click', function(
       curtainDiv.style.pointerEvents = 'none';
 
        // Change cursor style to mallet, but only once the curtain is open
-      document.documentElement.style.cursor = 'url("/images/Muppa-mallet.png"), auto';
-      document.body.style.cursor = 'url("/images/Muppa-mallet.png"), auto';
+      document.documentElement.style.cursor = 'url("images/Muppa-mallet.png"), auto';
+      document.body.style.cursor = 'url("images/Muppa-mallet.png"), auto';
     });
 
     leftCurtain.style.transform = 'translateX(-100%)';

@@ -28,7 +28,7 @@
   <br><br>
 
   ## [Installation](#table-of-contents)
-  This application is deployed at Puffafones on GitHub pages. <br>
+  This application is deployed at [Puffafones](https://jsalexan.github.io/muppafones/) on GitHub Pages. <br>
   <br>
   GitHub: [Repository for Puffafones app](https://github.com/jsalexan/muppafones) <br>
   There you will find following file types: 

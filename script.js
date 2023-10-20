@@ -7,7 +7,7 @@ function changeImage(event) {
   setTimeout(function() {
     image.src = originalSrc;
   }, 600);
-  console.log(event.target);
+  // console.log(event.target);
 }
 
 function playSound(dataPuff) {
@@ -30,7 +30,7 @@ document.getElementById('start-show-button').addEventListener('click', function(
       curtainDiv.style.opacity = 0;
       curtainDiv.style.pointerEvents = 'none';
 
-       // Change cursor style to mallet 
+       // Change cursor style to mallet, but only once the curtain is open
       document.documentElement.style.cursor = 'url("/images/Muppa-mallet.png"), auto';
       document.body.style.cursor = 'url("/images/Muppa-mallet.png"), auto';
     });
@@ -44,7 +44,7 @@ document.getElementById('start-show-button').addEventListener('click', function(
   }
 });
 
-// Event listeners for image interactions
+// Event listeners for puff interactions
 let images = document.querySelectorAll('.puff1 img');
 images.forEach(function(image) {
   let dataPuff = image.parentNode.getAttribute('data-puff');

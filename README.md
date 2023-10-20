@@ -40,7 +40,7 @@
    Desktop.<br><br>
   
 
-  ![Screen capture.](/images/Screenshot%20(489).png)
+  ![Screen capture.](images/puffafone%20scrsht.png)
 
   <br>
 
